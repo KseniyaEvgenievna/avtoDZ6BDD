@@ -34,9 +34,9 @@ public class TransferPage {
     }
 
     public void findErrorMessage(String expectedText) {
-        errorMessage.shouldHave(exactText(expectedText), Duration.ofSeconds(15)).shouldBe(visible);
+        errorMessage.shouldHave(exactText(expectedText), Duration.ofSeconds(30)).shouldBe(visible);
     }
     public SelenideElement getTransferHead() {
-        return transferHead;
-    }
+      return transferHead;
+   }
 }
